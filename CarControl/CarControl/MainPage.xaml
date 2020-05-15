@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CarControl.MainPage">
+
+    <Grid BackgroundColor="Black" RotationY="0">
+
+        <Label Text="{Binding Speed}" TextColor="AliceBlue" Grid.Row="2" Grid.Column="2" FontSize="75" FontAttributes="Bold" Grid.RowSpan="2"/>
+        <Label Text="MPH" TextColor="AliceBlue" Grid.Row="3" Grid.Column="2" FontSize="20" FontAttributes="Bold"/>
+
+        <Label Text="{Binding RPM}" TextColor="AliceBlue" Grid.Row="0" Grid.Column="2" FontSize="25" FontAttributes="Bold" TranslationY="50"/>
+        <Label Text="RPM" TextColor="AliceBlue" Grid.Row="1" Grid.Column="2" FontSize="20" FontAttributes="Bold" TranslationX="0" />
+
+        <Label Text="{Binding Temp}" TextColor="AliceBlue" Grid.Row="0" Grid.Column="4" FontSize="25" FontAttributes="Bold" TranslationX="25" />
+        <Label Text="F" Grid.Row="0" TextColor="AliceBlue" Grid.Column="4" FontSize="25" FontAttributes="Bold" TranslationX="100"/>
+
+        <ProgressBar Progress="{Binding Gas}" ProgressColor="Green" Grid.Row="4" Grid.Column="4" FlowDirection="MatchParent"/>
+        <Label Text="Fuel" Grid.Row="4" TextColor="AliceBlue" Grid.Column="4" FontSize="15" FontAttributes="Bold"/>
+        
+    </Grid>
+
+</ContentPage>
